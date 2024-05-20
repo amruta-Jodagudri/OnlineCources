@@ -1,0 +1,131 @@
+/* Overview.css */
+.curriculum-container {
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px;
+    margin-left: 40px;
+    text-align: center;
+  }
+  
+  .unchange-text {
+    color: black;
+  }
+
+  .changing-text {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .purple {
+    color: rgb(195, 117, 211);
+  }
+  
+  .purple-shade {
+    color: #e789e7; /* Darker shade of purple */
+  }
+  
+  .orange {
+    color: rgb(240, 206, 143);
+  }
+
+  .changing-text1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: purple;
+  }
+
+  .changing-text {
+    font-size: 55px;
+    font-weight: bold;
+  }
+
+  .highlight {
+    font-weight: bold;
+    background: linear-gradient(to right, purple, orange);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: gradient 3s linear infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .columns {
+    border: 1px solid rgb(231, 229, 225);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .column {
+    margin: 20px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .column-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .column-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .column-description {
+    font-size: 1rem;
+  }
+  
+  .column-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-curriculum-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .eye-icon {
+    margin-right: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .column-button {
+      justify-content: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .view-curriculum-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }

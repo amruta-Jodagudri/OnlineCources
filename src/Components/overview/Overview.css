@@ -1,0 +1,76 @@
+/* Overview.css */
+.overview-container {
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px;
+    margin-left: 60px;
+  }
+  
+  .heading1 {
+    font-size: 20px;
+    margin-top: -60px;
+  }
+
+  .heading {
+    text-align: center;
+    border: 2px solid orange;
+    width: 400px;
+  }
+  
+  .description {
+    margin-top: -50px;
+    font-size: 60px;
+    font-weight: bold;
+    width: 745px;
+  }
+  
+  .highlight {
+    color: purple;
+  }
+  
+  .features {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 20px;
+  }
+  
+  .feature {
+    width: 20%;
+    color: darkorange;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .enroll-button {
+    background-color: purple;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .know-more-button {
+    color: purple;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .feature {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
