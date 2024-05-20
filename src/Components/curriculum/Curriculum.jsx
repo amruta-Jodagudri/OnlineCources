@@ -1,86 +1,54 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Curriculum.css';
 
-function Curriculum() {
-  const [isDataScience, setIsDataScience] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIsDataScience(prevState => !prevState);
-    }, 2000); // Change text every 3 seconds
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []);
-
+const Curriculum = () => {
+  const icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaI496cfJX4fBlDo8kcAtjdkyAq9CyHOpvvxdRy9eqg&s";
   return (
     <div className="curriculum-container">
-      <div className="changing-text1">
-        {isDataScience ? 'DataScience Course Learning Path' : 'Full Stack Course Learning Path'}
-      </div>
-      <div className="changing-text">
-        <span className="highlight">
-          {isDataScience ? (
-            <>
-              <span className="purple">Data</span>
-              <span className="purple-shade"> Sci</span>
-              <span className="orange">ence</span>
-            </>
-          ) : (
-            <>
-              <span className="purple">Full</span>
-              <span className="purple-shade"> St</span>
-              <span className="orange">ack</span>
-            </>
-          )}
-        </span>
-      <span className='unchange-text'> Course Curriculum</span>
-      </div>
-      <div className="columns">
-        <div className="column">
-          <div className="column-text">
-            <div className="column-title">Data Science</div>
-            <div className="column-description">Become an expert in Data Science with 6 courses.</div>
+      <h2 className="curriculum-heading">How does the Internship Program work?</h2>
+      <div className="steps-container">
+        <div className="step-row">
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Learn from our structured pre-recorded courses made by experts to meet industry needs</p>
           </div>
-          <div className="column-button">
-            <button className="view-curriculum-button">
-              <span className="eye-icon">👁️</span> View Curriculum
-            </button>
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Personal mentors to guide and help you throughout your journey as a friend</p>
+          </div>
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Get guaranteed paid internships after completion of the program along with course completion certificates</p>
           </div>
         </div>
-        <div className="column">
-          <div className="column-text">
-            <div className="column-title">Full Stack</div>
-            <div className="column-description">Master Full Stack development with comprehensive courses.</div>
+        <div className="step-row">
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">1:1 live doubt solving support available throughout the day to clear your doubts instantly</p>
           </div>
-          <div className="column-button">
-            <button className="view-curriculum-button">
-              <span className="eye-icon">👁️</span> View Curriculum
-            </button>
-          </div>
-        </div>
-        <div className="column">
-          <div className="column-text">
-            <div className="column-title">Machine Learning</div>
-            <div className="column-description">Dive deep into Machine Learning techniques and tools.</div>
-          </div>
-          <div className="column-button">
-            <button className="view-curriculum-button">
-              <span className="eye-icon">👁️</span> View Curriculum
-            </button>
-          </div>
-        </div>
-        <div className="column">
-          <div className="column-text">
-            <div className="column-title">Cyber Security</div>
-            <div className="column-description">Learn the essentials of Cyber Security with practical courses.</div>
-          </div>
-          <div className="column-button">
-            <button className="view-curriculum-button">
-              <span className="eye-icon">👁️</span> View Curriculum
-            </button>
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Build major projects which make your resume stand apart</p>
           </div>
         </div>
       </div>
+      <div className="lines">
+        <div className="line line1"></div>
+        <div className="line line2"></div>
+        <div className="line line3"></div>
+        <div className="line line4"></div>
+      </div>
+      <button className="apply-button">Apply now for ₹ 2999</button>
     </div>
   );
 }
