@@ -11,6 +11,7 @@ function Navbar() {
         <Link to="/curriculum">Curriculum</Link>
         <Link to="/refund">Refund</Link>
         <Link to="/testimonials">Testimonials</Link>
+        <Link to="/certificates">Certificates</Link>
       </div>
     </nav>
   );

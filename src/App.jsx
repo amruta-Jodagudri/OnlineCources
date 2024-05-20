@@ -6,6 +6,7 @@ import Navbar from './Components/navbar/Navbar';
 import Overview from './Components/overview/Overview';
 import Refund from './Components/refund/Refund';
 import Testimonials from './Components/testimonials/Testimonials';
+import Certificates from './Components/cerificates/Certificates';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/refund" element={<Refund />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/certificates" element={<Certificates />} />
         </Routes>
       </div>
     </Router>
