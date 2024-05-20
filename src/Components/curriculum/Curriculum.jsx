@@ -1,34 +1,44 @@
 import React from 'react';
 import './Curriculum.css';
-//import icon from './icon.png'; // Replace with the path to your icon
 
 const Curriculum = () => {
+  const icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeaI496cfJX4fBlDo8kcAtjdkyAq9CyHOpvvxdRy9eqg&s";
   return (
     <div className="curriculum-container">
-      <h2 className="curriculum-heading">How does the Internship Program works ?</h2>
+      <h2 className="curriculum-heading">How does the Internship Program work?</h2>
       <div className="steps-container">
-        <div className="row">
+        <div className="step-row">
           <div className="step">
-            <img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-natural-hills-and-mountains-png-image_781887.jpg" alt="Icon" className="step-icon" />
-            <p className="step-text">Learn from our structured pre recorded courses made by experts to meet industry needs</p>
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Learn from our structured pre-recorded courses made by experts to meet industry needs</p>
           </div>
           <div className="step">
-            <img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-natural-hills-and-mountains-png-image_781887.jpg" alt="Icon" className="step-icon" />
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Personal mentors to guide and help you throughout your journey as a friend</p>
+          </div>
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Get guaranteed paid internships after completion of the program along with course completion certificates</p>
+          </div>
+        </div>
+        <div className="step-row">
+          <div className="step">
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
             <p className="step-text">1:1 live doubt solving support available throughout the day to clear your doubts instantly</p>
           </div>
           <div className="step">
-            <img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-natural-hills-and-mountains-png-image_781887.jpg" alt="Icon" className="step-icon" />
-            <p className="step-text">Personal mentors to guide and help you throughout your journey as a friend</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="step">
-            <img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-natural-hills-and-mountains-png-image_781887.jpg" alt="Icon" className="step-icon" />
-            <p className="step-text">Build major projects which makes your resume stand apart</p>
-          </div>
-          <div className="step">
-            <img src="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-natural-hills-and-mountains-png-image_781887.jpg" alt="Icon" className="step-icon" />
-            <p className="step-text">Get guaranteed paid internships after completion of the program along with course completion certificates</p>
+            <div className="step-icon-container">
+              <img src={icon} alt="Icon" className="step-icon" />
+            </div>
+            <p className="step-text">Build major projects which make your resume stand apart</p>
           </div>
         </div>
       </div>

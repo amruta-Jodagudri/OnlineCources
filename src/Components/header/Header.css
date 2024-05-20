@@ -32,12 +32,13 @@ button.signup {
 }
 
 button.signup:hover {
-    background-color:  rgb(153, 64, 190);
+    background-color: rgb(153, 64, 190);
 }
 
 button.login {
     color: darkviolet;
 }
+
 button.login:hover {
     background-color: rgb(153, 64, 190);
     color: white;
@@ -48,6 +49,7 @@ button.login:hover {
         margin-left: 20px;
     }
 }
+
 @media (max-width: 400px) {
     .logo {
         margin-left: 0px;
