@@ -1,0 +1,49 @@
+/* src/navbar.css */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: rgb(219, 165, 14);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
